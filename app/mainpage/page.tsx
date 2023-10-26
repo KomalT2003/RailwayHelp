@@ -10,7 +10,7 @@ const Home = () => {
   const handleSearch = async (location) => {
     // Use Google Maps Places API to fetch nearby railway stations based on the 'location'.
     // You should replace 'YOUR_API_KEY' with your actual Google Maps API key.
-    const apiKey = 'AIzaSyD2E4vbrhVYs3ytVCYhla0AJSJcO0a9Slc';
+    const apiKey = 'api-key';
     const response = await fetch(
       `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${location}&radius=5000&type=train_station&key=${apiKey}`
     );
